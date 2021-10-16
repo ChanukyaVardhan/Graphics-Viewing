@@ -1,0 +1,74 @@
+<html>
+
+<head>
+	<title>CS475 Assignment 2</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.css">
+</head>
+
+<body>
+	<h3 class="text-center"><u>Modelling-Viewing Pipeline : Viewing</u></h3>
+	<div class="container">
+		<h4>The images of the models in various coordinate systems: </h4>
+		<div class="col-md-4">
+			<img src="images/WCS.png" width="350" class="img-responsive img-rounded">
+			<h4 class="text-center">WCS</h4>
+		</div>
+		<div class="col-md-4">
+			<img src="images/VCS.png" width="350" class="img-responsive img-rounded">
+			<h4 class="text-center">VCS</h4>
+		</div>
+		<div class="col-md-4">
+			<img src="images/CCS.png" width="350" class="img-responsive img-rounded">
+			<h4 class="text-center">CCS</h4>
+		</div>
+	</div>
+	<div class="container" style="display:block; margin-left:auto; margin-right:auto;">
+		<div class="col-md-4">
+			<img src="images/NDCS.png" width="350" class="img-responsive img-rounded">
+			<h4 class="text-center">NDCS</h4>
+		</div>
+		<div class="col-md-4">
+			<img src="images/DCS.png" width="350" class="img-responsive img-rounded">
+			<h4 class="text-center">DCS</h4>
+		</div>
+	</div>
+
+	<div class="container">
+		<h4>Features and Instructions:</h4>
+		<ul>
+			<li><h5>Run the Makefile using <code>make</code> command, to get the executable "assign02".</h5></li>
+			<li><h5>Using the command <code>./assign02</code> a window appears where the models are loaded from "myscene.scn" file.</h5></li>
+			<li><h5>Pressing 1, 2, 3, 4 will help us to view models in VCS, CCS, NDCS, DCS respectively.</h5></li>
+			<li><h5>The keys "D, A, S, W, E, Q" allow rotations along the positive and negative Y, X and Z axis respectively of the camera.</h5></li>
+			<li><h5>The key "R" helps to nullify all the applied rotations to the camera (for convenience).</h5></li>
+		</ul>
+	</div>
+	<div class="container">
+		<div class="col-md-4">
+			<img src="images/CCS_unclipped.png" width="350" class="img-responsive img-rounded">
+			<h4 class="text-center">CCS without clipping</h4>
+		</div>
+		<div class="col-md-4">
+			<img src="images/CCS_clipped.png" width="350" class="img-responsive img-rounded">
+			<h4 class="text-center">CCS with clipping</h4>
+		</div>
+	</div>
+	<div class="container">
+		<h4>Clipping</h4>
+		<ul>
+			<li><h5>Clipping is implemented in 3D in CCS using Cohen-Sutherland algorithm</h5></li>
+			<li><h5>Pressing 5, 6, 7 will help us to view clipped models in CCS, NDCS, DCS respectively.</h5></li>
+		</ul>
+	</div>
+
+	<div class="container">
+		<h4>References:</h4>
+		<ul>
+			<li><h5>The base code for the assignment is taken directly from the tutorials given. <a href="https://github.com/paragchaudhuri/cs475-tutorials">https://github.com/paragchaudhuri/cs475-tutorials</a></h5></li>
+			<li><h5><a href="http://watkins.cs.queensu.ca/~jstewart/454/notes/454-MVPtransform/">http://watkins.cs.queensu.ca/~jstewart/454/notes/454-MVPtransform/</a> This link is used for the understanding clipping in CCS.</h5></li>
+		</ul>
+	</div>
+</body>
+
+</html>
